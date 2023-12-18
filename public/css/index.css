@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+
+	box-sizing: border-box;
+
+	--text-title: "Rubik Doodle Shadow", sans-serif;
+	--text-base: "Exo 2", sans-serif;
+
+	--text-primary: #f3ebeb;
+	--text-secondary: #141414;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+
+	font-family: var(--text-base);
+	color: var(--text-primary);
+
+	scroll-behavior: smooth;
+	cursor: url(../assets/svg/mouse.svg), auto;
+}
+
+a {
+	cursor: url(../assets/svg/mouse.svg), pointer;
+}
+
+.mainSection {
+	position: relative;
+	display: flex;
+
+	width: 100vw;
+}
+
+nav {
+	position: fixed;
+
+	display: flex;
+	align-items: center;
+
+	padding: 1rem;
+
+	width: 100%;
+
+	z-index: 1000;
+}
+
+nav .navLogo a {
+	font-family: var(--text-title);
+	font-size: 2rem;
+	font-weight: 700;
+
+	color: var(--text-primary);
+
+	text-transform: uppercase;
+	text-decoration: none;
+
+	margin-left: 5rem;
+}
+
+nav .navLinks {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+nav .navLinks a {
+	font-size: 1rem;
+	margin-right: 5rem;
+
+	color: var(--text-primary);
+
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav .navLinks a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: var(--text-primary);
+	transition: width 0.3s;
+}
+
+nav .navLinks a:hover::after {
+	width: 100%;
+}
+
+.mainSection h1 {
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	font-size: 200px;
+	font-weight: 100;
+	font-family: var(--text-title);
+
+	line-height: 100px;
+
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#backgroundVideo {
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------- Most Known Deserts ---------------------- */
+/* ---------------------------------------------------------------- */
+
+.mostKnownDeserts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	height: 120vh;
+	width: 100vw;
+
+	background-color: var(--text-secondary);
+
+	padding: 8rem 0;
+}
+
+.mostKnownDeserts h1.title {
+	font-family: var(--text-title);
+	font-size: 3rem;
+	font-weight: 700;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	color: var(--text-primary);
+	letter-spacing: 0.1rem;
+	line-height: 1.2;
+
+	margin-bottom: 2rem;
+}
+
+.mostKnownDeserts h1.title::after {
+	content: "";
+	display: block;
+
+	width: 40rem;
+	height: 2px;
+
+	background: var(--text-primary);
+
+	margin: auto;
+}
+
+.mostKnownDeserts .desertsList {
+	height: 100%;
+}
+
+.mostKnownDeserts .desertsList .carousel {
+	display: flex;
+	justify-content: center;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert {
+	width: 15vw;
+	height: 80vh;
+
+	margin-left: 1rem;
+
+	position: relative;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert .image {
+	height: 100%;
+	width: 100%;
+
+	border-radius: 0.5rem;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert h1 {
+	position: absolute;
+	font-size: 2.2rem;
+	font-weight: bold;
+
+	top: 90%;
+	left: 1rem;
+
+	transition: top 0.2s linear;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert p {
+	display: flex;
+
+	position: absolute;
+	opacity: 0;
+	top: 88%;
+	left: 1rem;
+
+	transition: opacity 0.3s linear;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert p a {
+	text-decoration: none;
+	color: var(--text-primary);
+}
+
+.mostKnownDeserts .desertsList .carousel .image#europe {
+	background-image: url("../assets/png/Deserts_Europe.jpeg");
+	background-size: cover;
+	background-position: 50%;
+}
+
+.mostKnownDeserts .desertsList .carousel .image#afrique {
+	background-image: url("../assets/png/Deserts_Afrique.webp");
+	background-size: cover;
+	background-position: 50%;
+}
+
+.mostKnownDeserts .desertsList .carousel .image#amerique {
+	background-image: url("../assets/png/Deserts_Amerique.webp");
+	background-size: cover;
+	background-position: 50%;
+}
+
+.mostKnownDeserts .desertsList .carousel .image#asie {
+	background-image: url("../assets/png/Deserts_Asie.webp");
+	background-size: cover;
+	background-position: 50%;
+}
+
+.mostKnownDeserts .desertsList .carousel .image#orient {
+	background-image: url("../assets/png/Deserts_Orient.webp");
+	background-size: cover;
+	background-position: 50%;
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	background: #000;
+	opacity: 0.6;
+
+	transition: opacity 0.3s linear;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert:hover > .overlay {
+	opacity: 0;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert:hover > h1 {
+	top: 80%;
+}
+
+.mostKnownDeserts .desertsList .carousel .desert:hover > p {
+	opacity: 1;
+}
+
+/* ----------------------------------------------------------------- */
+/* ----------------------------  Footer ---------------------------- */
+/* ----------------------------------------------------------------- */
+
+.footer {
+	height: 20vh;
+	width: 100vw;
+	background: #fff;
+	color: var(--text-secondary);
+
+	padding: 2rem 5rem;
+}
+
+.footer .grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.footer .grid .leftSide {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer .grid .rightSide ul {
+	list-style-type: none;
+}
+
+.footer .grid .rightSide ul a {
+	text-decoration: none;
+	color: var(--text-secondary);
+}
+
+.footer h1 {
+	font-family: var(--text-title);
+	width: 15vw;
+}
+
+.footer a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: var(--text-secondary);
+	transition: width 0.3s;
+}
+
+.footer a:hover::after {
+	width: 100%;
+}
