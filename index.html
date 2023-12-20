@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
+		<!-- Balises méta pour le jeu de caractères et les paramètres de la vue -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Titre du document HTML -->
 		<title>Les déserts du monde entier</title>
 
+		<!-- Lien vers le fichier CSS externe pour le style -->
 		<link rel="stylesheet" href="./public/css/index.css" />
+
+		<!-- Lien vers le fichier CSS externe pour les icônes de flèche -->
 		<link
 			href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
+		<!-- Conteneur principal de la page Web -->
 		<div class="container">
+			<!-- Section principale contenant la navigation et la vidéo d'arrière-plan -->
 			<section class="mainSection">
+				<!-- Barre de navigation avec logo et liens -->
 				<nav>
 					<div class="navLogo">
 						<a href="#">Déserts</a>
@@ -26,6 +35,7 @@
 					</div>
 				</nav>
 
+				<!-- Vidéo d'arrière-plan avec les attributs autoplay, mute et loop -->
 				<video
 					autoplay
 					muted
@@ -34,14 +44,19 @@
 					src="./public/assets/mp4/Background-Video.mp4"
 				></video>
 
+				<!-- Titre principal de la page Web -->
 				<h1>Déserts</h1>
 			</section>
 
+			<!-- Section affichant les déserts les plus connus par continents -->
 			<section class="mostKnownDeserts">
+				<!-- Titre de la section -->
 				<h1 class="title">Les déserts par continents</h1>
 
+				<!-- Liste des déserts avec une mise en page de type carrousel -->
 				<div class="desertsList">
 					<div class="carousel">
+						<!-- Entrée pour le désert en Europe -->
 						<div class="desert">
 							<div class="overlay"></div>
 							<div class="image" id="europe"></div>
@@ -51,6 +66,7 @@
 								<a href="#"><i class="gg-arrow-right"></i></a>
 							</p>
 						</div>
+						<!-- Entrée pour le désert en Afrique -->
 						<div class="desert">
 							<div class="image" id="afrique"></div>
 							<div class="overlay"></div>
@@ -60,6 +76,7 @@
 								<a href="#"><i class="gg-arrow-right"></i></a>
 							</p>
 						</div>
+						<!-- Entrée pour le désert en Amérique -->
 						<div class="desert">
 							<div class="image" id="amerique"></div>
 							<div class="overlay"></div>
@@ -69,6 +86,7 @@
 								<a href="#"><i class="gg-arrow-right"></i></a>
 							</p>
 						</div>
+						<!-- Entrée pour le désert en Asie -->
 						<div class="desert">
 							<div class="image" id="asie"></div>
 							<div class="overlay"></div>
@@ -78,6 +96,7 @@
 								<a href="#"><i class="gg-arrow-right"></i></a>
 							</p>
 						</div>
+						<!-- Entrée pour le désert en Orient -->
 						<div class="desert">
 							<div class="image" id="orient"></div>
 							<div class="overlay"></div>
@@ -91,16 +110,19 @@
 				</div>
 			</section>
 
+			<!-- Section pied de page -->
 			<section class="footer">
 				<div class="grid">
 					<div class="leftSide">
+						<!-- Titre du pied de page -->
 						<h1 class="title">Les déserts du monde</h1>
 						<p>Fait par <b>JustStop__</b></p>
 					</div>
 					<div class="rightSide">
+						<!-- Liste des liens de navigation dans le pied de page -->
 						<ul>
 							<li><a href="#">Accueil</a></li>
-							<li><a href="#">à propos</a></li>
+							<li><a href="#">À propos</a></li>
 							<li><a href="#">Déserts</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>

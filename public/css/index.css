@@ -1,6 +1,8 @@
+/* Importation de polices depuis Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
 
+/* Réinitialisation des styles de base */
 * {
 	margin: 0;
 	padding: 0;
@@ -16,6 +18,7 @@
 	--text-secondary: #141414;
 }
 
+/* Styles pour la barre de défilement */
 ::-webkit-scrollbar-track {
 	border-radius: 1;
 }
@@ -29,6 +32,7 @@
 	background: none;
 }
 
+/* Styles pour le corps de la page */
 body {
 	height: 100vh;
 	width: 100vw;
@@ -42,10 +46,12 @@ body {
 	overflow-x: hidden;
 }
 
+/* Styles pour les liens */
 a {
 	cursor: url(../assets/svg/mouse.svg), pointer;
 }
 
+/* Section principale avec la vidéo d'arrière-plan */
 .mainSection {
 	position: relative;
 	display: flex;
@@ -53,6 +59,7 @@ a {
 	width: 100vw;
 }
 
+/* Barre de navigation fixée en haut */
 nav {
 	position: fixed;
 
@@ -66,6 +73,7 @@ nav {
 	z-index: 1000;
 }
 
+/* Logo de la barre de navigation */
 nav .navLogo a {
 	font-family: var(--text-title);
 	font-size: 2rem;
@@ -79,6 +87,7 @@ nav .navLogo a {
 	margin-left: 5rem;
 }
 
+/* Liens de la barre de navigation */
 nav .navLinks {
 	display: flex;
 	width: 100%;
@@ -108,6 +117,7 @@ nav .navLinks a:hover::after {
 	width: 100%;
 }
 
+/* Titre principal de la page */
 .mainSection h1 {
 	position: absolute;
 
@@ -127,16 +137,14 @@ nav .navLinks a:hover::after {
 	text-transform: uppercase;
 }
 
+/* Vidéo d'arrière-plan */
 #backgroundVideo {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
 }
 
-/* ---------------------------------------------------------------- */
-/* ---------------------- Most Known Deserts ---------------------- */
-/* ---------------------------------------------------------------- */
-
+/* Section pour les déserts les plus connus par continents */
 .mostKnownDeserts {
 	display: flex;
 	flex-wrap: wrap;
@@ -150,6 +158,7 @@ nav .navLinks a:hover::after {
 	padding: 8rem 0;
 }
 
+/* Titre de la section */
 .mostKnownDeserts h1.title {
 	font-family: var(--text-title);
 	font-size: 3rem;
@@ -177,6 +186,7 @@ nav .navLinks a:hover::after {
 	margin: auto;
 }
 
+/* Liste des déserts avec mise en page de type carrousel */
 .mostKnownDeserts .desertsList {
 	height: 100%;
 }
@@ -219,8 +229,8 @@ nav .navLinks a:hover::after {
 	position: absolute;
 	opacity: 0;
 	top: 88%;
-	left: 1rem;
 
+	left: 1rem;
 	transition: opacity 0.3s linear;
 }
 
@@ -229,6 +239,7 @@ nav .navLinks a:hover::after {
 	color: var(--text-primary);
 }
 
+/* Images des déserts par continent */
 .mostKnownDeserts .desertsList .carousel .image#europe {
 	background-image: url("../assets/png/Deserts_Europe.jpeg");
 	background-size: cover;
@@ -259,6 +270,7 @@ nav .navLinks a:hover::after {
 	background-position: 50%;
 }
 
+/* Effet d'overlay au survol du désert */
 .overlay {
 	position: absolute;
 	height: 100%;
@@ -274,6 +286,7 @@ nav .navLinks a:hover::after {
 	opacity: 0;
 }
 
+/* Animation du déplacement du titre et de l'apparition du texte au survol du désert */
 .mostKnownDeserts .desertsList .carousel .desert:hover > h1 {
 	top: 80%;
 }
@@ -282,10 +295,7 @@ nav .navLinks a:hover::after {
 	opacity: 1;
 }
 
-/* ----------------------------------------------------------------- */
-/* ----------------------------  Footer ---------------------------- */
-/* ----------------------------------------------------------------- */
-
+/* Section du pied de page */
 .footer {
 	height: 20vh;
 	width: 100vw;
@@ -295,17 +305,20 @@ nav .navLinks a:hover::after {
 	padding: 2rem 5rem;
 }
 
+/* Grille pour la disposition du pied de page */
 .footer .grid {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
+/* Section de gauche dans la grille du pied de page */
 .footer .grid .leftSide {
 	display: flex;
 	flex-direction: column;
 }
 
+/* Liste des liens de navigation dans la section de droite de la grille du pied de page */
 .footer .grid .rightSide ul {
 	list-style-type: none;
 }
@@ -315,11 +328,13 @@ nav .navLinks a:hover::after {
 	color: var(--text-secondary);
 }
 
+/* Titre du pied de page */
 .footer h1 {
 	font-family: var(--text-title);
 	width: 15vw;
 }
 
+/* Effet de soulignement des liens au survol */
 .footer a::after {
 	content: "";
 	display: block;
