@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Balises méta pour le jeu de caractères et les paramètres de la vue -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Titre du document HTML -->
+		<title>Les déserts du monde entier</title>
+
+		<!-- Lien vers le fichier CSS interne pour le style -->
+		<link rel="stylesheet" href="./public/css/main.css" />
+		<link rel="stylesheet" href="./public/css/contact.css" />
+
+		<!-- Lien vers le fichier CSS externe pour les icônes de flèche -->
+		<link
+			href="https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<div class="navLogo">
+					<a href="#">Déserts</a>
+				</div>
+				<div class="navLinks">
+					<a href="index.html">Accueil</a>
+					<a href="apropos.html">À propos</a>
+					<a href="deserts.html">Déserts</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</nav>
+
+			<section class="contact">
+				<form action="contact.html" method="POST">
+					<div class="firstRow">
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Nom"
+							spellcheck="false"
+							autocomplete="family-name"
+						/>
+
+						<input
+							type="text"
+							name="firstname"
+							id="firstname"
+							placeholder="Prénom"
+							spellcheck="false"
+							autocomplete="given-name"
+						/>
+					</div>
+
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Addresse Mail"
+						spellcheck="false"
+						autocomplete="email"
+					/>
+
+					<textarea
+						name="message"
+						id="message"
+						placeholder="Question concernant..."
+						spellcheck="false"
+					></textarea>
+
+					<button type="submit">Envoyer</button>
+				</form>
+			</section>
+
+			<footer>
+				<div class="grid">
+					<div class="leftSide">
+						<!-- Titre du pied de page -->
+						<h1 class="title">Les déserts du monde</h1>
+						<p>Fait par <b>JustStop__</b></p>
+					</div>
+					<div class="rightSide">
+						<!-- Liste des liens de navigation dans le pied de page -->
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="apropos.html">À propos</a></li>
+							<li><a href="deserts.html">Déserts</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

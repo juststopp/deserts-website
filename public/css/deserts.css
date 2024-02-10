@@ -1,0 +1,91 @@
+section.content {
+	height: auto;
+	width: 100vw;
+
+	background-color: var(--text-secondary);
+
+	padding: 8rem 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.content h1.title {
+	font-family: var(--text-title);
+	font-size: 3rem;
+	font-weight: 700;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	color: var(--text-primary);
+	letter-spacing: 0.1rem;
+	line-height: 1.2;
+
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+}
+
+section.content h1.title::after {
+	content: "";
+	display: block;
+
+	width: 25rem;
+	height: 2px;
+
+	background: var(--text-primary);
+
+	margin: auto;
+}
+
+section.content div.left {
+	display: flex;
+	justify-self: center;
+	align-items: start;
+	flex-direction: row;
+
+	height: 20rem;
+	width: 70%;
+}
+
+section.content div.right {
+	display: flex;
+	justify-self: center;
+	align-items: end;
+	flex-direction: row-reverse;
+
+	height: auto;
+	width: 70%;
+}
+
+section.content div {
+	margin: 1rem;
+}
+
+section.content div.left div.texts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+section.content div.right div.texts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+	text-align: end;
+}
+
+section.content div div.texts h1 {
+	font-size: 2rem;
+}
+
+section.content div img {
+	height: 10rem;
+	width: 15rem;
+	border-radius: 1rem;
+	aspect-ratio: auto;
+}
